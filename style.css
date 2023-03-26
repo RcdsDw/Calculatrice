@@ -1,0 +1,126 @@
+* {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 32px;
+}
+
+body {
+    background-color: var(--background-main);
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+:root {
+    --full-white: hsl(0, 0%, 100%);
+    --background-main: hsl(222, 26%, 31%); 
+    --background-keypad: hsl(223, 31%, 20%);
+    --background-screen: hsl(224, 36%, 15%);
+    --key-blue: hsl(225, 21%, 49%);
+    --key-blue-shadow: hsl(224, 28%, 35%);
+    --key-red: hsl(6, 63%, 50%);
+    --key-red-shadow: hsl(6, 70%, 34%);
+    --key-white: hsl(30, 25%, 89%);
+    --key-white-shadow: hsl(28, 16%, 65%);
+}
+
+/* bloc */
+
+#bloc {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    width: 400px;
+}
+
+/* écran de calculatrice */
+
+#ecran {
+    border-radius: 10px;
+    color: var(--full-white);
+    background: var(--background-screen);
+    width: 100%;
+    height: 100px;
+    text-align: right;
+    padding: 3%;
+}
+
+/* title */
+
+h2 {
+    color: var(--full-white);
+}
+
+/* boutons de calculatrice */
+
+#buttoncalc {
+    display: flex;
+    flex-direction: column;
+    background: var(--background-keypad);
+    border-radius: 10px;
+    padding: 3%;
+    width: 100%;
+    row-gap: 10px;
+}
+
+#buttoncalc>div{
+    column-gap: 20px;
+}
+
+.button1 {
+    background: var(--key-white);
+    color: var(--background-keypad);
+    width: 100%;
+    height: 45px;
+    border-radius: 10px;
+    box-shadow: inset 0px -6px 0px 0px var(--key-white-shadow);
+    border: none;
+    transition: all 0.2s;
+}
+
+.button2 {
+    width: 100%;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    transition: all 0.2s;
+}
+
+#row1, #row2, #row3, #row4, #row5 {
+    display: flex;
+    justify-content: center;
+}
+
+/* animations boutons */
+
+.button1:active, .button2:active, #del:active, #reset:active, #egal:active {
+    transform: translateY(1.5px);
+    box-shadow: none;
+}
+
+/* exceptions boutons */
+
+#del, #reset {
+    color: var(--full-white);
+    background-color: var(--key-blue);
+    box-shadow: inset 0px -6px 0px 0px var(--key-blue-shadow);
+    transition: all 0.2s;
+}
+
+#egal {
+    color: var(--full-white);
+    background-color: var(--key-red);
+    box-shadow: inset 0px -6px 0px 0px var(--key-red-shadow);
+    transition: all 0.2s;
+}
+
+/* footer */
+
+.attribution, a {
+    font-size: 15px;
+    margin-top: 1%;
+}
+
+.attribution a {
+    color: var(--full-white);
+}

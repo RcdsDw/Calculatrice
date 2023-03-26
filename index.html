@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+
+
+  
+  <title>Frontend Mentor | Calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<div id="bloc">
+  <header>
+    <h2>Calculatrice</h2>
+  </header>
+  <div id="ecran">
+    <p id="screen"></p>
+  </div>
+  <div id="buttoncalc">
+    <div id="row1">
+      <button data-key="103" class='button1' type="button">7</button>
+      <button data-key="104" class='button1' type="button">8</button>
+      <button data-key="105"  class='button1' type="button">9</button>
+      <button data-key="8" id="del" class='button1' type="button">DEL</button>
+    </div>
+    <div id="row2">
+      <button data-key="100" class='button1' type="button">4</button>
+      <button data-key="101" class='button1' type="button">5</button>
+      <button data-key="102" id="num6" class='button1' type="button">6</button>
+      <button data-key="107" id="plus" class='button1' type="button">+</button>
+    </div>
+    <div id="row3">
+      <button data-key="97" id="num1" class='button1' type="button">1</button>
+      <button data-key="98" id="num2" class='button1' type="button">2</button>
+      <button data-key="99" id="num3" class='button1' type="button">3</button>
+      <button data-key="109" id="moins" class='button1' type="button">-</button>
+    </div>
+    <div id="row4">
+      <button data-key="110" id="point" class='button1' type="button">.</button>
+      <button data-key="96" id="num0" class='button1' type="button">0</button>
+      <button data-key="111" id="divise" class='button1' type="button">/</button>
+      <button data-key="106" id="fois" class='button1' type="button">*</button>
+    </div>
+    <div id="row5">
+      <button data-key="82" id="reset" class='button2' type="button">RESET</button>
+      <button data-key="13" id="egal" class='button2' type="button">=</button>
+    </div>
+  </div>
+</div>
+
+  
+<div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="#">Rafael
+  </a>.
+ </div>
+</body>
+</html>
