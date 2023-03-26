@@ -124,3 +124,7 @@ h2 {
 .attribution a {
     color: var(--full-white);
 }
+
+a:visited {
+    color: var(--full-white);
+  }
