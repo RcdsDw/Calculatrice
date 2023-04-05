@@ -21,4 +21,4 @@ J'ai commencé ce projet car je voulais m'exercer pour apprendre ou réapprendre
 
 ## Un site qui m'a servi
 
-Le premier si qui m'a servi et qui me sert tous les jours où je code : [Mozilla](https://developer.mozilla.org/fr/docs/Web)
+Le premier site qui m'a servi et qui me sert tous les jours où je code : [Mozilla](https://developer.mozilla.org/fr/docs/Web)
